@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(SharedMemoryProject)
+
+add_executable(parent.cpp) extend (child.cpp)
+
+find_package(shared_memory_lib REQUIRED)
+target_link_libraries(my_program shared_memory_lib)
